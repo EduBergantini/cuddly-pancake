@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/EduBergantini/cuddly-pancake/issues"
   },
-  "homepage": "https://github.com/EduBergantini/cuddly-pancake#readme"
+  "homepage": "https://github.com/EduBergantini/cuddly-pancake#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.2.8"
+  }
 }
