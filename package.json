@@ -1,7 +1,7 @@
 {
   "name": "cuddly-pancake",
   "version": "1.0.0",
-  "description": "Creating a React client project with Typecript",
+  "description": "Creating a React client project with Typescript",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
