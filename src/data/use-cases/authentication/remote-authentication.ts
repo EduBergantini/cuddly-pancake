@@ -14,9 +14,9 @@ export class RemoteAuthentication {
     const response = await this.httpPostClient.post({ url: this.url, body: model })
 
     switch (response.statusCode) {
+      case HttpStatusCode.ok: return await Promise.resolve()
       case HttpStatusCode.unauthorized: throw new InvalidCredentialsError()
-      case HttpStatusCode.badRequest: throw new UnexpectedError()
-      default: return await Promise.resolve()
+      default: throw new UnexpectedError()
     }
   }
 }
