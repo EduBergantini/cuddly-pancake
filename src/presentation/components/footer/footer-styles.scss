@@ -1,0 +1,14 @@
+@import "../../styles/colors.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary;
+  height: 48px;
+
+  p {
+    text-align: center;
+    color: $white;
+    padding-top: 16px;
+  }
+}

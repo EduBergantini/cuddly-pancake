@@ -1,3 +1,4 @@
+import Footer from '@/presentation/components/footer/footer'
 import Logo from '@/presentation/components/logo/logo'
 import Spinner from '@/presentation/components/spinner/spinner'
 import React from 'react'
@@ -31,9 +32,7 @@ const Login: React.FC = () => {
           <Spinner className={Styles.externalSpinner} />
         </div>
       </form>
-      <footer className={Styles.footer}>
-
-      </footer>
+      <Footer />
     </div>
   )
 }
