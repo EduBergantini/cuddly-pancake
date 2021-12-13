@@ -4,16 +4,6 @@ body {
   background-color: $background;
 }
 
-input[type="email"],
-input[type="password"] {
-  border: 1px solid $primaryDark;
-  padding: 0 40px 0 8px;
-
-  &:focus {
-    outline-color: $primary;
-  }
-}
-
 button {
   background-color: $primary;
   color: $white;
@@ -63,24 +53,6 @@ button {
       text-align: center;
       font-size: 16px;
       text-transform: uppercase;
-    }
-
-    .inputContainer {
-      margin-top: 16px;
-      display: flex;
-      align-items: center;
-      position: relative;
-
-      input {
-        flex-grow: 1;
-      }
-
-      .inputStatus {
-        position: absolute;
-        right: 8px;
-        font-size: 12px;
-        cursor: help;
-      }
     }
 
     .loginSubmit {

@@ -1,3 +1,4 @@
+import CustomInput from '@/presentation/components/custom-input/custom-input'
 import Footer from '@/presentation/components/footer/footer'
 import Logo from '@/presentation/components/logo/logo'
 import Spinner from '@/presentation/components/spinner/spinner'
@@ -13,18 +14,8 @@ const Login: React.FC = () => {
       </header>
       <form className={Styles.form}>
         <h2>Login</h2>
-        <div className={Styles.inputContainer}>
-          <input type="email" name="email" placeholder="Digite seu e-mail" />
-          <span className={Styles.inputStatus}>
-          &#128308;
-          </span>
-        </div>
-        <div className={Styles.inputContainer}>
-          <input type="password" name="password" placeholder="Digite seu senha" />
-          <span className={Styles.inputStatus}>
-          &#128308;
-          </span>
-        </div>
+        <CustomInput type="email" name="email" placeholder="Digite seu e-mail"/>
+        <CustomInput type="password" name="password" placeholder="Digite seu senha"/>
         <button className={Styles.loginSubmit} type="submit">Entrar</button>
         <span className={Styles.createAccount}>Crie sua conta</span>
         <div className={Styles.errorContainer}>
